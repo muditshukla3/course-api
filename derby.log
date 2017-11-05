@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Thu Oct 26 09:26:30 CDT 2017:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-015f-5913-cd82-00000dabfd70 
+on database directory memory:C:\NeonWorkspace\course-api\testdb with class loader sun.misc.Launcher$AppClassLoader@c387f44 
+Loaded from file:/C:/Users/mshukla1/.m2/repository/org/apache/derby/derby/10.12.1.1/derby-10.12.1.1.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_45-b15
+user.dir=C:\NeonWorkspace\course-api
+os.name=Windows 7
+os.arch=amd64
+os.version=6.1
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
