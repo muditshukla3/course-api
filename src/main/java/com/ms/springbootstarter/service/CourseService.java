@@ -1,4 +1,4 @@
-package com.nrg.springbootstarter.service;
+package com.ms.springbootstarter.service;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,9 +6,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.nrg.springbootstarter.models.Course;
-import com.nrg.springbootstarter.models.Topic;
-import com.nrg.springbootstarter.repo.CourseRepository;
+import com.ms.springbootstarter.models.Course;
+import com.ms.springbootstarter.repo.CourseRepository;
 
 @Service
 public class CourseService {

@@ -1,9 +1,9 @@
-package com.nrg.springbootstarter.repo;
+package com.ms.springbootstarter.repo;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import com.nrg.springbootstarter.models.Topic;
+import com.ms.springbootstarter.models.Topic;
 
 @Repository
 public interface TopicRepository extends CrudRepository<Topic, String> {

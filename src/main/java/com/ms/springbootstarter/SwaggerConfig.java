@@ -1,4 +1,4 @@
-package com.nrg.springbootstarter;
+package com.ms.springbootstarter;
 
 import static springfox.documentation.builders.PathSelectors.regex;
 
@@ -20,8 +20,8 @@ public class SwaggerConfig {
 		
 		return new Docket(DocumentationType.SWAGGER_2)
 				.select().
-				 apis(RequestHandlerSelectors.basePackage("com.nrg.springbootstarter.controllers"))
-				.paths(regex("/rest/topics*"))
+				 apis(RequestHandlerSelectors.basePackage("com.ms.springbootstarter.controllers"))
+				.paths(regex("/topics.*"))
 				.build()
 				.apiInfo(metaData());
 	}
@@ -32,7 +32,7 @@ public class SwaggerConfig {
                 "Spring Boot REST API for Courses",
                 "1.0",
                 "Terms of service",
-                new Contact("Mudit Shukla", "", "mshukla1@nrg.com"),
+                new Contact("Mudit Shukla", "", "muditshukla@muditshukla.com"),
                "Apache License Version 2.0",
                 "https://www.apache.org/licenses/LICENSE-2.0");
         return apiInfo;

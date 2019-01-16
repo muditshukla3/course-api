@@ -1,11 +1,11 @@
-package com.nrg.springbootstarter.repo;
+package com.ms.springbootstarter.repo;
 
 import java.util.List;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import com.nrg.springbootstarter.models.Course;
+import com.ms.springbootstarter.models.Course;
 
 @Repository
 public interface CourseRepository extends CrudRepository<Course, String> {

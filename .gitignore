@@ -2,5 +2,7 @@
 /bin
 /.settings
 /target
-_classpath.xml
-_project.xml
+.classpath
+.project
+.factorypath
+derby.log

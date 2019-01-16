@@ -1,4 +1,4 @@
-package com.nrg.springbootstarter.controllers;
+package com.ms.springbootstarter.controllers;
 
 import java.util.List;
 
@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.nrg.springbootstarter.models.Course;
-import com.nrg.springbootstarter.models.Topic;
-import com.nrg.springbootstarter.service.CourseService;
+import com.ms.springbootstarter.models.Course;
+import com.ms.springbootstarter.models.Topic;
+import com.ms.springbootstarter.service.CourseService;
 
 import io.swagger.annotations.Api;
 

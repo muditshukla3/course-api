@@ -1,4 +1,4 @@
-package com.nrg.springbootstarter.controllers;
+package com.ms.springbootstarter.controllers;
 
 import java.util.List;
 
@@ -9,15 +9,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.nrg.springbootstarter.models.Topic;
-import com.nrg.springbootstarter.service.TopicService;
+import com.ms.springbootstarter.models.Topic;
+import com.ms.springbootstarter.service.TopicService;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 
 @RestController
 @RequestMapping("/topics")
-@Api(value="Topic", produces="Operations pertaining to Topics")
+@Api(value="Topic", description="Operations pertaining to Topics")
 public class TopicController {
 
 	@Autowired
