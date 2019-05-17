@@ -6,3 +6,4 @@
 .project
 .factorypath
 derby.log
+.idea/*

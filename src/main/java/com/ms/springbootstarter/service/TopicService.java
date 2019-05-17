@@ -2,6 +2,7 @@ package com.ms.springbootstarter.service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -16,14 +17,16 @@ public class TopicService {
 	private TopicRepository topicRepository;
 	
 	public List<Topic> getAllTopics(){
-		List<Topic> topicList = new ArrayList<Topic>();
+		List<Topic> topicList = new ArrayList<>();
 		topicRepository.findAll().
 		      forEach(topicList :: add);
 		return topicList;
 	}
 	
 	public Topic findTopicById(String id){
-		return topicRepository.findOne(id);
+
+		Optional<Topic> topic = topicRepository.findById(id);
+		return topic.orElse(new Topic());
 	}
 	
 	public void addTopic(Topic topic){
@@ -32,15 +35,15 @@ public class TopicService {
 
 	public void updateTopic(Topic topic, String id) {
 		
-		Topic topicDB =topicRepository.findOne(id);
+		Optional<Topic> topicDB =topicRepository.findById(id);
 		
-		if(topicDB!=null){
+		if(topicDB.isPresent()){
 			topicRepository.save(topic);
 		}
 		
 	}
 
 	public void deleteTopic(String id) {
-		topicRepository.delete(id);
+		topicRepository.deleteById(id);
 	}
 }

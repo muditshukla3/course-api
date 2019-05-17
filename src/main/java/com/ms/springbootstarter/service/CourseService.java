@@ -2,6 +2,7 @@ package com.ms.springbootstarter.service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -23,7 +24,7 @@ public class CourseService {
 	}
 	
 	public Course findCourseById(String id){
-		return courseRepository.findOne(id);
+		return courseRepository.findById(id).orElse(new Course());
 	}
 	
 	public void addCourse(Course course){
@@ -35,6 +36,6 @@ public class CourseService {
 	}
 
 	public void deleteCourse(String id) {
-		courseRepository.delete(id);
+		courseRepository.deleteById(id);
 	}
 }
